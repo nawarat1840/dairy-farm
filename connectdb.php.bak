@@ -1,0 +1,11 @@
+<?php
+	$db_host="localhost";
+	$db_username="root";
+	$db_pwd="12345678";
+	$db_name="dairy_farm";
+	$link=mysql_connect($db_host,$db_name,$db_pwd) or die ('MySQL Connect Failed!!'.mysql_error());
+	mysql_query('SET NAMES utf8');
+	mysql_select_db($db_name) or die ('Cannot Open Database!!'.mysql_error());
+
+	echo "Connection Successed";
+?>
